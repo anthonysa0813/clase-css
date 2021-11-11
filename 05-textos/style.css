@@ -1,0 +1,42 @@
+/* textos
+-text-align
+-text-transform
+-text-shadow
+-line-height
+- letter-spacing
+
+fuente: 
+- font-weight
+- font-size
+- font-style
+- font-family
+
+
+*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+.contenedor {
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 31px;
+  /* margin-top: 50px; */
+  width: 80%;
+  margin: 50px auto;
+  padding: 1rem;
+  background: #e0e0e0;
+  box-shadow: 16px 16px 32px #afafaf, -16px -16px 32px #ffffff;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenedor p {
+  line-height: 2rem;
+  /* letter-spacing: 10px; */
+}

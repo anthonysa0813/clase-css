@@ -1,0 +1,32 @@
+/*
+
+colores rgba
+- red
+- green
+- blue
+- alpha
+0 - 255
+aplha : va de 0 a 1
+*/
+
+h1 {
+  background-color: rgb(0, 0, 255);
+  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(236, 219, 60, 0.986);
+}
+
+/* colores rgba */
+
+/* colores hexadecimales
+- se basa en un sistema de 16 digitos
+- se empieza con #
+- decimal = range(0,15)
+- hexadecimal range(0,10) + A....F
+ejemplo: 
+- #ff0000 = rgb(255,0,0)
+- también tiene su modo alpha
+
+*/
+h1 {
+  background-color: #75f863;
+}

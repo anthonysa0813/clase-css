@@ -1,0 +1,13 @@
+/* list-style-type */
+
+/* list-style-image */
+
+/* list-style-position */
+
+nav ul li {
+  /* list-style: none; */
+  /* list-style-image: url(../images/arrow.svg); */
+  /* background-color: royalblue; */
+  /* list-style-position: inside; */
+  list-style-type: georgian;
+}

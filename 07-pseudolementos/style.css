@@ -1,0 +1,26 @@
+/* 
+Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento.
+
+
+::selection => para selecccionar el párrafo
+::first-line
+::before
+::after
+
+*/
+
+.text p::selection {
+  background-color: rgb(100, 143, 237);
+}
+
+.text p::first-line {
+  color: red;
+}
+
+.contenedor h1::before {
+  content: "👌";
+}
+
+.contenedor h1::after {
+  content: "👍";
+}

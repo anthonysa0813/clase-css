@@ -1,0 +1,38 @@
+/* backgrounds */
+
+/* .contenedor {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  background-image: url(../images/marvel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+body {
+  height: 400vh;
+}
+
+/* backgrounds attachment */
+
+.contenedor {
+  background-image: url(../images/paralize.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* background linear */
+
+.contenedores {
+  background-image: linear-gradient(to left, crimson, white);
+  background: #34e89e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #34e89e,
+    #0f3443
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #34e89e, #0f3443);
+}

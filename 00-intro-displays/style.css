@@ -1,0 +1,20 @@
+/* 
+ definición: es el comportamiento de su flujo o elemento.
+  block: va a tomar el 100% de su tamaño padre
+  inline: solamente va a tomar el tamaño de su contenido
+  inline-block: va ser una mezcla entre block e inline
+*/
+
+body {
+  /* width: 50vw; */
+  border: 4px solid blue;
+}
+
+.contenedor {
+  background-color: brown;
+  /* display: block; */
+  /* display: inline; */
+  display: inline-block;
+  /* width: 50%; */
+  height: 100px;
+}

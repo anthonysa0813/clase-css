@@ -1,0 +1,55 @@
+body {
+  background-color: cadetblue;
+}
+
+/* 
+
+especificidad 
+- La especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento
+
+
+Valores de tipos de selectores:
+- etiqueta:                1
+- clase ...................10
+- id .......................100
+- !important................ insuperable 
+
+*/
+
+a {
+  /* color: white !important; */
+}
+
+.enlace {
+  color: black;
+}
+
+/* #ancla {
+  color: yellow;
+} */
+
+a.enlace {
+  color: purple;
+}
+
+/* 
+
+herencia 
+- hay ciertos valores que heredan como el color y el font.
+- otras que no heredan como el width
+
+*/
+
+.contenedor {
+  border: 1px solid red;
+  margin-top: 50px;
+  height: 100px;
+  width: 50%;
+  color: red;
+}
+
+.card {
+  border: 3px solid blue;
+  height: 10px;
+  width: inherit;
+}

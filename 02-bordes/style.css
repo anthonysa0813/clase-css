@@ -1,0 +1,52 @@
+body {
+  background-color: chocolate;
+}
+
+/* bordes */
+
+.contenedor {
+  /* border: border-width border-style border-color */
+  border: 3px solid rgb(14, 13, 13);
+  height: 100px;
+  border-style: dotted;
+  border-style: dashed;
+  border-style: groove;
+  border-style: solid;
+  border-width: 10px;
+  border-color: red;
+  border-color: yellow;
+  border-top: 5px solid rgb(0, 17, 255);
+  border-left: 15px dashed black;
+}
+
+/* border-radius */
+
+.contenedor {
+  border-radius: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.contenedor {
+  border: 5px solid black;
+  width: 50%;
+  border-radius: 0;
+}
+
+/* box shadow */
+
+.contenedor {
+  /* box-shadow: x y color*/
+  box-shadow: 10px 10px rgb(80, 10, 10);
+  /* box-shadow: x y blur spread color */
+  box-shadow: 10px 15px 10px 10px rgb(80, 10, 10);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.contenedor {
+  border-radius: 125px;
+  background: #e0e0e0;
+  box-shadow: 36px 36px 84px #828282, -36px -36px 84px #ffffff;
+}

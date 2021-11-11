@@ -1,0 +1,96 @@
+/* 
+intro: Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
+
+pseudoclases para etiquetas a
+  :link => para enlaces que no hayan sido visitado
+  :visited => para enlaces que si hayan sido visitados
+  :hover => cuando nos ponemos encima del elemento.
+  :active => cuando le estamos dando click.
+
+
+pseudoclases para formularios
+:focus  => para inputs, cuando estamos selecccionando un input.
+:checked => para input type radio ó checbox
+
+pseudoclases para uso en el root
+:root {
+}
+
+not()
+se lee: vamos a seleccionar a todos los h3 que no tengan la clase title.
+h3:not(.title){}
+*/
+
+:root {
+  --color-primary: rgb(250, 65, 59);
+}
+
+a:link {
+  color: brown;
+}
+
+a:visited {
+  color: rgb(22, 22, 22);
+  display: inline-block;
+  height: 1px;
+}
+a:active {
+  color: blue;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: darkcyan;
+}
+
+.box:hover {
+  background-color: darkgreen;
+  transition: 0.3s;
+}
+
+/* Formulario */
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 1rem;
+  border: 1px solid var(--color-primary);
+}
+
+form h1 {
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+form input:focus {
+  background-color: salmon;
+  color: var(--color-primary);
+}
+
+input[type="radio"] {
+  width: 10%;
+}
+
+input[type="radio"]:checked {
+  color: salmon;
+}
+
+h1:not(.title) {
+  color: var(--color-primary);
+}
