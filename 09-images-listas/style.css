@@ -5,9 +5,10 @@
 /* list-style-position */
 
 nav ul li {
-  /* list-style: none; */
-  /* list-style-image: url(../images/arrow.svg); */
+  list-style: none;
+  list-style-image: url(../images/arrow.svg);
+  border: 1px solid;
   /* background-color: royalblue; */
-  /* list-style-position: inside; */
-  list-style-type: georgian;
+  list-style-position: inside;
+  /* list-style-type: georgian; */
 }

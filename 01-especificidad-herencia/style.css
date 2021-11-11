@@ -18,17 +18,22 @@ Valores de tipos de selectores:
 
 a {
   /* color: white !important; */
+  color: red;
 }
 
-.enlace {
+a {
+  color: green;
+}
+
+/* /* .enlace {
   color: black;
-}
-
-/* #ancla {
-  color: yellow;
 } */
 
-a.enlace {
+#ancla {
+  color: yellow;
+}
+
+a.enlace #ancla {
   color: purple;
 }
 

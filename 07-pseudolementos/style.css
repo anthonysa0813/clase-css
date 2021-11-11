@@ -10,11 +10,15 @@ Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectore
 */
 
 .text p::selection {
-  background-color: rgb(100, 143, 237);
+  background-color: rgb(237, 100, 219);
 }
 
 .text p::first-line {
   color: red;
+}
+
+.contenedor h1::before {
+  content: "---";
 }
 
 .contenedor h1::before {

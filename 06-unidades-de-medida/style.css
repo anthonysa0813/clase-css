@@ -8,30 +8,32 @@ body {
 }
 
 .contenedor {
-  font-size: 20px;
+  font-size: 2em; /* 32px */
+  width: 10em; /* 320px */
+  width: 20em;
 }
 /* EM */
 .contenedor {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   /* 16 + 8 = 24px  */
   border: 1px solid red;
 }
 
 .contenedor p {
-  font-size: 2em;
+  /* font-size: 2em; */
 
   /* font-size: 2 * 24 = 48px */
-  padding: 0.5em;
+  /* padding: 0.5em; */
 }
 
 /* REM */
 .contenedor p {
-  font-size: 1rem;
+  font-size: 2rem; /* 32px */
 }
 
 /* Porcentajes */
 .contenedor {
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* Unidades ViewPort 
@@ -44,12 +46,17 @@ vh = viewport height
 .contenedor {
   background: rgb(236, 127, 127);
   color: white;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   padding: 0;
 }
 
 .contenedor p {
   padding: 0;
   margin: 0;
+}
+
+.contenedor img {
+  width: 100vw;
+  height: 100vh;
 }

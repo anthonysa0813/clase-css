@@ -29,9 +29,9 @@ body {
 
 h1 {
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 400;
   font-style: normal;
 }
@@ -39,4 +39,17 @@ h1 {
 .contenedor p {
   line-height: 2rem;
   /* letter-spacing: 10px; */
+}
+
+button {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: calc(50% - 50px);
+}
+
+button:hover {
+  background-color: rgb(54, 54, 248);
+  color: white;
 }

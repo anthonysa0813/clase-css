@@ -10,7 +10,7 @@ pseudoclases para etiquetas a
 
 pseudoclases para formularios
 :focus  => para inputs, cuando estamos selecccionando un input.
-:checked => para input type radio ó checbox
+:checked => para input type radio ó checbox 
 
 pseudoclases para uso en el root
 :root {
@@ -22,7 +22,7 @@ h3:not(.title){}
 */
 
 :root {
-  --color-primary: rgb(250, 65, 59);
+  --color-primary: rgb(59, 148, 250);
 }
 
 a:link {

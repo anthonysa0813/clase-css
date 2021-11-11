@@ -1,0 +1,56 @@
+.debug {
+  border: 1px solid red;
+}
+:root {
+  --color-white: #fff;
+  --color-primary: rgb(61, 61, 238);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1rem;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/marvel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  color: var(--color-white);
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(70% - 50px);
+}
+
+button:hover {
+  border: 1px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-primary);
+}

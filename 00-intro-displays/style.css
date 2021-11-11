@@ -12,9 +12,13 @@ body {
 
 .contenedor {
   background-color: brown;
+  /* display: inline; */
   /* display: block; */
   /* display: inline; */
   display: inline-block;
   /* width: 50%; */
+  /* width: 50%; */
   height: 100px;
+  width: 50%;
+  /* width: 80%; */
 }
