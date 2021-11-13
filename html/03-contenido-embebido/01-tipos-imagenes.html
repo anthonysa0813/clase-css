@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatos de imágenes</title>
+  </head>
+  <body>
+    <!-- Formatos de imágenes
+      vectores: 
+        - svg
+      Mapa de bits
+        .jpg y jpeg (son buenos para fotos)
+        .png (para fotos ó imágenes detalladas con transparencias)
+        .webp (es mas liviano que jpg y png y soporta transparencias)
+      
+      atributos importantes
+        - srcset="url..."
+        "srcset" => va a tomar la mejor imágen para el caso del viewport
+        
+            <img
+              srcset="img/pantalla.jpg 2x, img/moto.jpg 4x"
+              src="img/portafolio.svg"
+              alt=""
+            />
+      -->
+    <!-- picture -->
+    <picture>
+      <!-- cada source es una imagen -->
+      <source srcset="../../images/hero.jpg" media="(min-width: 400px)" />
+
+      <source srcset="../../images/marvel.jpg" media="(min-width: 800px)" />
+      <img src="../../images/paralize.jpg" alt="" />
+    </picture>
+
+    <!-- representa un contenido -->
+    <figure>
+      <source srcset="../../images/hero.jpg" media="(min-width: 400px)" />
+      <figcaption>Foto de paralize</figcaption>
+    </figure>
+
+    <video src="ruta del video .mp4" width="400" controls></video>
+    <audio src="recibe un mp3"></audio>
+    <!-- agregar contenido externo -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.google.com"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
