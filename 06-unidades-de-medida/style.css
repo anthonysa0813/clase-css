@@ -10,7 +10,7 @@ body {
 .contenedor {
   font-size: 2em; /* 32px */
   width: 10em; /* 320px */
-  width: 20em;
+  width: 20em; /* 320px * 20 */
 }
 /* EM */
 .contenedor {
@@ -24,11 +24,14 @@ body {
 
   /* font-size: 2 * 24 = 48px */
   /* padding: 0.5em; */
+
+  /* rem: apunta al html */
+  font-size: 0.5rem; /* 2 * 16 = 32px */
 }
 
 /* REM */
 .contenedor p {
-  font-size: 2rem; /* 32px */
+  font-size: 3rem; /* 32px */
 }
 
 /* Porcentajes */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <style>
+    /* 
+      atributos para agrupación de filas y columnas
+        - colspan
+        - rowspan
+
+    */
+    table {
+      /* no crea espacios entre las celdas */
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid;
+      padding: 0.5rem;
+    }
+    th {
+      background-color: rgba(22, 21, 21, 0.986);
+      color: white;
+    }
+  </style>
+
+  <body>
+    <table>
+      <!-- caption: para el título de mi tabla -->
+      <caption>
+        Horarios de cursos semanales
+      </caption>
+      <colgroup>
+        <col />
+        <col style="background:yellow"">
+      </colgroup>
+      <!-- border=1 (no es recomendable) -->
+      <!-- table=> marca la tabla -->
+      <thead>
+        <tr>
+          <!-- th = table head (cabeceras) -->
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miercoles</th>
+          <th>Jueves</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- tr = table row (fila) -->
+          <!-- td= table data (para cada celda ó columna) -->
+          <td colspan="2">Python</td>
+
+          <td>Base de datos</td>
+          <td>ExpressJs</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Javascript</td>
+          <td>Html5</td>
+          <td>CSS3</td>
+        </tr>
+        <tr>
+          <td>Ux design</td>
+          <td>nodejs</td>
+          <td>MongoDb</td>
+          <td>Strapi</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total de horas</td>
+          <td>12 horas</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
