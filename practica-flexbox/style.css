@@ -9,6 +9,7 @@ body {
   background-color: var(--color-primary);
   margin: 0;
   font-family: "DM Sans", sans-serif;
+  position: relative;
 }
 
 /* 
@@ -32,6 +33,22 @@ contenido:
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.white {
+  color: white;
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #f74747;
+  color: white;
 }
 
 nav {
@@ -89,14 +106,32 @@ nav ul {
   order: -1;
 }
 
+.icon-index {
+  font-size: 1.5rem;
+  display: block;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+}
+.orderMenu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 1rem;
+}
+
 @media screen and (min-width: 600px) {
   nav {
-    display: block;
+    display: flex;
   }
   .hero-content {
     flex-direction: row;
   }
   .image-content {
     order: 2;
+  }
+  .icon-index {
+    display: none;
   }
 }
