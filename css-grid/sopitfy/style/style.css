@@ -1,0 +1,53 @@
+:root {
+  --gray60: #000000;
+  --gray50: #121212;
+  --gray40: #181818;
+  --gray20: #282828;
+  --gray20: #737373;
+  --gray10: #b3b3b3;
+  --primary: #00b050;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 90px;
+  grid-template-areas:
+    "aside aside main main main main main main "
+    "menu menu menu menu menu menu menu menu";
+}
+
+.aside {
+  grid-area: aside;
+  background-color: var(--gray60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  grid-area: main;
+  background-color: var(--gray50);
+}
+.menu {
+  grid-area: menu;
+  background-color: var(--gray40);
+}
+
+.icono {
+  width: 20px;
+  height: 22px;
+  border: 1px solid red;
+  background-image: url("./images/home.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-home {
+  color: var(--white);
+  font-size: 2rem;
+}
+.icon-home:hover {
+  color: var(--primary);
+}
