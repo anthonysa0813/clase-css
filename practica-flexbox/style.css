@@ -8,6 +8,7 @@
 body {
   background-color: var(--color-primary);
   margin: 0;
+  position: relative;
   font-family: "DM Sans", sans-serif;
   position: relative;
 }
